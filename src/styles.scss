@@ -1,0 +1,104 @@
+html {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+html body {
+	margin: 0;
+	background: #2980b9;
+	background: linear-gradient(to right, #2980b9, #2c3e50);
+	font-family: 'Montserrat', sans-serif;
+}
+
+div.content {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.heading {
+  flex: 0 0 20%;
+	color: #fff;
+  text-align: center;
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #2980b9;
+    background-color: #fafafa;
+    color: #2980b9;
+    padding: .3rem
+  }
+}
+
+.heading h1 {
+	margin-bottom: 3rem;
+	font-weight: 300;
+  position: relative;
+  
+  
+}
+
+.heading h1:after {
+	content: '';
+	height: 2px;
+	width: 2rem;
+	position: absolute;
+	left: 50%;
+	bottom: -1rem;
+	transform: translateX(-50%);
+	background-color: #fff;
+}
+
+.container {
+  flex: 0 0 80%;
+	background-color: #fff;
+	padding: 2rem;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+.container .list .num {
+	padding: 0.5rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	transition: 0.25s;
+}
+
+
+
+.container .list .num h3 {
+	position: relative;
+	left: -1.5rem;
+	color: #3d3d3d;
+	font-size: 0.85rem;
+	transition: 0.25s;
+}
+
+.container .list .num:hover {
+	background-color: #fafafa;
+	cursor: pointer;
+}
+
+.container .list .num:hover:before {
+	opacity: 0.2;
+}
+
+.container .list .num:hover h3 {
+	left: 1rem;
+}
+
+.message {
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 2rem;
+}
+
+.loader {
+  position: relative;
+  left: 50%;
+  top: 50%
+}
